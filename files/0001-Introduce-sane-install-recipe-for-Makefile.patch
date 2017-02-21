@@ -1,0 +1,41 @@
+From f2c2b62af15ff627d824c10555814a2614699168 Mon Sep 17 00:00:00 2001
+From: Joshua Strobl <joshua@stroblindustries.com>
+Date: Tue, 21 Feb 2017 22:43:59 +0200
+Subject: [PATCH 1/1] Introduce sane install recipe for Makefile
+
+---
+ Makefile | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index e71b138..2965163 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,5 +1,8 @@
+ .SECONDEXPANSION:
+ 
++PREFIX=/usr
++LIBDIR=$(PREFIX)/lib64
++
+ NPM_VERSION=3.10.10
+ NODE_VERSION=6.9.5
+ 
+@@ -199,9 +202,12 @@ build: $(WORKSPACE)/bin/heroku $(WORKSPACE)/lib/npm $(WORKSPACE)/lib/node $(WORK
+ 
+ .PHONY: install
+ install: build
+-	cp -r $(WORKSPACE) /usr/local/lib/heroku
+-	rm /usr/local/bin/heroku
+-	ln -s /usr/local/lib/heroku/bin/heroku /usr/local/bin/heroku
++	install -dm00644 $(DESTDIR)$(PREFIX)/bin
++	install -dm00644 $(DESTDIR)$(LIBDIR)
++	cp -r $(WORKSPACE) $(DESTDIR)$(LIBDIR)/heroku
++	ln -s $(LIBDIR)/heroku/bin/heroku $(DESTDIR)$(PREFIX)/bin/heroku
++	rmdir $(DESTDIR)$(LIBDIR)/heroku/etc
++	rm -r $(DESTDIR)$(LIBDIR)/heroku/lib/{node,npm}
+ 
+ .PHONY: clean
+ clean:
+-- 
+2.11.1
+
