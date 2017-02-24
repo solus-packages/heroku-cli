@@ -1,8 +1,8 @@
 name       : heroku-cli
-version    : 5.6.24
-release    : 2
+version    : 5.6.26
+release    : 3
 source     :
-    - https://github.com/heroku/cli/archive/v5.6.24.tar.gz : ea3ce6806880cf429d559fe44da4140bf393408db04c1f888bb9887f7f8fc902
+    - https://github.com/heroku/cli/archive/v5.6.26.tar.gz : 8220a959b43d6b013250e9fe7b1d2a0aeef1d73e5738267ecc2447fb9356ec57
 license    : MIT
 networking : yes
 component  : network.clients
