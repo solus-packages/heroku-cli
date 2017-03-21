@@ -503,6 +503,10 @@
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/.travis.yml</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/README.md</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/commands/certs/add.js</Path>
+            <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/commands/certs/auto.js</Path>
+            <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/commands/certs/auto/disable.js</Path>
+            <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/commands/certs/auto/enable.js</Path>
+            <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/commands/certs/auto/refresh.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/commands/certs/chain.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/commands/certs/generate.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/commands/certs/index.js</Path>
@@ -515,6 +519,7 @@
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/lib/certificate_details.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/lib/display_table.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/lib/display_warnings.js</Path>
+            <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/lib/domains.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/lib/endpoints.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/lib/error.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/lib/find_match.js</Path>
@@ -559,6 +564,10 @@
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/package.json</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/test/assert_exit.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/test/commands/certs/add.js</Path>
+            <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/test/commands/certs/auto.js</Path>
+            <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/test/commands/certs/auto/disable.js</Path>
+            <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/test/commands/certs/auto/enable.js</Path>
+            <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/test/commands/certs/auto/refresh.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/test/commands/certs/chain.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/test/commands/certs/generate.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-certs/test/commands/certs/index.js</Path>
@@ -703,6 +712,7 @@
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-cli-util/lib/styled.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-cli-util/lib/table.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-cli-util/lib/util.js</Path>
+            <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-cli-util/lib/vars.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-cli-util/lib/yubikey.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-cli-util/package.json</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-client/.npmignore</Path>
@@ -1348,6 +1358,7 @@
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-spaces/commands/peering/destroy.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-spaces/commands/peering/index.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-spaces/commands/peering/info.js</Path>
+            <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-spaces/commands/ps.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-spaces/commands/rename.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-spaces/commands/topology.js</Path>
             <Path fileType="library">/usr/lib64/heroku/lib/node_modules/heroku-spaces/commands/trusted-ips/add.js</Path>
@@ -4154,9 +4165,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2017-03-14</Date>
-            <Version>5.7.0</Version>
+        <Update release="6">
+            <Date>2017-03-21</Date>
+            <Version>5.7.5</Version>
             <Comment>Packaging update</Comment>
             <Name>Joshua Strobl</Name>
             <Email>joshua@stroblindustries.com</Email>
