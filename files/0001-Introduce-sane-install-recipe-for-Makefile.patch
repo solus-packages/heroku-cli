@@ -1,6 +1,6 @@
-From f2c2b62af15ff627d824c10555814a2614699168 Mon Sep 17 00:00:00 2001
+From 77d2c94b4d5f2ef86fbd7862c55327cf88a200ad Mon Sep 17 00:00:00 2001
 From: Joshua Strobl <joshua@stroblindustries.com>
-Date: Tue, 21 Feb 2017 22:43:59 +0200
+Date: Sun, 30 Apr 2017 21:11:04 +0300
 Subject: [PATCH 1/1] Introduce sane install recipe for Makefile
 
 ---
@@ -8,7 +8,7 @@ Subject: [PATCH 1/1] Introduce sane install recipe for Makefile
  1 file changed, 9 insertions(+), 3 deletions(-)
 
 diff --git a/Makefile b/Makefile
-index e71b138..2965163 100644
+index d9a7220..81677de 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -1,5 +1,8 @@
@@ -17,8 +17,8 @@ index e71b138..2965163 100644
 +PREFIX=/usr
 +LIBDIR=$(PREFIX)/lib64
 +
- NPM_VERSION=3.10.10
- NODE_VERSION=6.9.5
+ NPM_VERSION=4.2.0
+ NODE_VERSION=7.8.0
  
 @@ -199,9 +202,12 @@ build: $(WORKSPACE)/bin/heroku $(WORKSPACE)/lib/npm $(WORKSPACE)/lib/node $(WORK
  
@@ -37,5 +37,5 @@ index e71b138..2965163 100644
  .PHONY: clean
  clean:
 -- 
-2.11.1
+2.12.2
 
